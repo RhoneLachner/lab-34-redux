@@ -38,8 +38,8 @@ function App() {
 
   return (
     <>
-      <button onClick={undo}>undo</button>
-      <button onClick={redo}>redo</button>
+      <button data-testid="undo" onClick={undo}>undo</button>
+      <button data-testid="redo" onClick={redo}>redo</button>
 
       <label htmlFor="colorInput">color input</label>
       <input id="colorInput" type="color" value={current} onChange={({ target }) => record(target.value)} />
